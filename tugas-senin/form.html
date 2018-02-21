@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form Sign Up</title>
+</head>
+<body>
+	<h1>Buat Account Baru!</h1>
+	<h2>Sign Up Form</h2>
+	<form action="welcome.html" method="POST">
+		<label for="first-name">First name:</label>
+		<br>
+		<input type="text" name="firstname" id="first-name">	
+		<br>
+		<label for="last-name">Last name:</label>
+		<br>
+		<input type="text" name="lastname" id="last-name">
+		<br>
+		<br>
+		<label for="gender">Gender:</label>
+		<br>
+		<input type="radio" name="gender" value="male" id="male-radio">
+		<label for="male-radio">Male</label>
+		<br>
+		<input type="radio" name="gender" value="female" id="female-radio">
+		<label for="female-radio">Female</label>
+		<br>
+		<input type="radio" name="other" value="other" id="other-radio">
+		<label for="other-radio">Other</label>
+		<br>
+		<br>
+		<label for="national">Nationality:</label>
+		<br>
+		<select name="national">
+			<option value="indonesian">Indonesian</option>
+			<option value="malaysian">Malaysian</option>
+			<option value="singaporean">Singaporean</option>
+			<option value="australian">Australian</option>
+		</select>
+		<br>
+		<br>
+		<label for="lang">Language Spoken:</label>
+		<br>
+		<input type="checkbox" name="lang" value="indonesia" id="indonesia-box">
+		<label for="indonesia-box">Bahasa Indonesia</label>
+		<br>
+		<input type="checkbox" name="lang" value="english" id="english-box">
+		<label for="english-box">English</label>
+		<br>
+		<input type="checkbox" name="lang" value="other" id="other-box">
+		<label for="other-box">Other</label>
+		<br>
+		<br>
+		<label for="bio">Bio:</label>
+		<br>
+		<textarea id="bio"></textarea>
+		<br>
+		<br>
+		<input type="submit" value="Sign Up" action="index.html">
+	</form>
+</body>
+</html>
