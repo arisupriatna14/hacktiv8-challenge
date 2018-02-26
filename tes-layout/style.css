@@ -1,0 +1,102 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    /*background-color: #000;*/
+}
+
+
+/* Header */
+#header-nav {
+   width: 100%;
+   height: 60px;
+   /*border: 2px solid red;*/
+   position: fixed;
+   z-index: 1;
+   background-color: #f57c00;
+}
+
+.brand-logo {
+   float: left;
+   padding-left: 20px;
+   font-size: 32px;
+   font-weight: bold;
+   color: white;
+   line-height: 60px;
+   text-decoration: none;
+}
+
+nav {
+   float: right;
+}
+
+nav a {
+   color: white;
+   line-height: 60px;
+   padding: 5px 10px;
+   font-size: 18px;
+   text-decoration: none;
+   font-family: 'Righteous', cursive;
+}
+
+a input {
+  border-radius: 5px;
+  border: 2px solid white;
+  height: 23px;
+}
+
+#header-img {
+   position: relative;
+   z-index: 0;
+}
+
+#text-img {
+   top: 20%;
+   left: 5%;
+   position: static;
+   color: white;
+   font-size: 32px;
+   text-align: center;
+}
+
+#btn-go {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+#btn-go i {
+  margin-top: 10px;
+  padding: 10px;
+}
+/* /Header */
+
+
+/* Section */
+section {
+   margin: auto;
+   width: 950px;
+   min-height: 600px;
+   border: 2px solid purple;
+}
+
+article {
+   margin: 15px 15px;
+   width: 915px;
+   min-height: 250px;
+   border: 2px solid yellow;
+}
+/* /Section */
+
+
+/* Footer */
+footer {
+   width: 100%;
+   height: 70px;
+   border: 2px solid blue;
+}
+/*/Footer*/

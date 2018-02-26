@@ -1,8 +1,7 @@
 # arisupriatna14.github.io
 
 ### About This Site
-This site contains a list of my curriculum vitae
-
+This site contains a list of my curriculum vitae, blog, and tutorials.
 ### Used Tags & Syntaxes
 
 **HTML Tag**
@@ -13,12 +12,16 @@ This site contains a list of my curriculum vitae
 - link
 - body
 - header
-- div
 - section
+- aside
+- nav
 - h1
 - h2
 - img
+- input
+- footer
 - br
+- hr
 - p
 - u
 - a
@@ -42,13 +45,17 @@ This site contains a list of my curriculum vitae
 - background
 - display
 - border-radius
-- flex-direction
+- box-shadow
+- outline
+- cursor
 - transition
 - border
 - margin bottom
 - text-decoration
 - letter-spacing
 - align items
+- min-height
+- line-height
 
 ### About Me
 Hallo, I'm Ari Supriatna, from Lebak, Banten. I was born in 1999. I graduated from MAN 2 Lebak in 2017 majoring in science. I have previously studied at one of the private universities in south Tangerang majoring in Informatics Engineering. But now is on a 1-month leave, to follow bootcamp on Hacktiv8.
