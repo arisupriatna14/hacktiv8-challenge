@@ -14,12 +14,16 @@ DISPLAY "Resultan Gaya"
 2. Tahun Kabisat
 
 STORE "Tahun" with value 2018
-IF "Tahun" % 4 EQUALS ZERO AND "Tahun" % 100 NOT EQUALS ZERO
-   DISPLAY "Tahun Kabisat"
-ELSE IF "Tahun" % EQUALS ZERO AND "Tahun" % 100 EQUALS ZERO AND "Tahun" % 400 EQUALS ZERO
-   DISPLAY "Tahun Kabisat"
+STORE "Keterangan1" with "Tahun" MOD 4
+STORE "Keterangan2" with "Tahun" MOD 100
+STORE "Keterangan3" with "Tahun" MOD 400
+
+IF "Keterangan1" EQUALS 0 AND "Keterangan2" NOT EQUALS 0
+  DISPLAY "Tahun" "adalah Tahun Kabisat"
+ELSE IF "Keterangan1" EQUALS 0 AND "Keterangan2" EQUALS 0 AND "Keterangan3" EQUALS 0
+  DISPLAY "Tahun" "adalah Tahun Kabisat"
 ELSE 
-   DISPLAY "Bukan Tahun Kabisat"
+  DISPLAY "Tahun" " adalah Bukan Tahun Kabisat"
 END IF
 
 ===========================================================================================
@@ -36,18 +40,18 @@ DISPLAY "Nyalakan Mesin Cuci"
 ===========================================================================================
 4. Periksa Kuku
 
-STORE "SISWA_SISWI" with value 40
+STORE "siswa_siswi" with value 40
 STORE "siswa_kuku_panjang" with value 1
 STORE "siswa_kuku_pendek" with value 0
 
-WHILE "SISWA_SISWI" <= 40
+WHILE "siswa_siswi" <= 40
   IF "siswa_kuku_panjang" EQUALS 1
      DISPLAY "Dapat Hukuman"
   ELSE 
      DISPLAY "Dapat Pujian"
   END IF
   
-  ADD "SISWA_SISWI" by 1
+  ADD "siswa_siswi" by 1
 END WHILE
 
 
