@@ -1,7 +1,7 @@
+// [Exercises 4] Mengenal penggunaan Conditional (Switch-Case) dalam JavaScript
 var tanggal = 14;
 var bulan = 8;
 var tahun = 1999;
-var keterangan = " ";
 
 switch(bulan) {
 	case 1: {

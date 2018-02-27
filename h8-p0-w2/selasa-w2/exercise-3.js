@@ -23,6 +23,7 @@ if (nama === " ") {
                else if (peran === "Gru") {
                   console.log("Selamat datang di Dunia Proxytia " + nama);
                   console.log("Hallo " + peran + " " + nama + ", ciptakan keajaiban yang membantu kemenanganmu!");
-               } else {
-                 console.log("Hallo " + nama + ", nama peranmu tidak tesedia. silahkan pilih peran yang tersedia!");
-               }
+               } 
+                  else {
+                    console.log("Hallo " + nama + ", nama peranmu tidak tesedia. silahkan pilih peran yang tersedia!");
+                  }
