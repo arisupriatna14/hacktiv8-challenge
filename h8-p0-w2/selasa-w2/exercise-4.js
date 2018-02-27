@@ -5,55 +5,58 @@ var keterangan = " ";
 
 switch(bulan) {
 	case 1: {
-		keterangan = "Januari";
+		bulan = "Januari";
 		break;
 	}
 	case 2: {
-		keterangan = "Februari"
+		bulan = "Februari"
 		break;
 	}
 	case 3: {
-		keterangan = "Maret"
+		bulan = "Maret"
 		break;
 	}
 	case 4: {
-		keterangan = "April";
+		bulan = "April";
 		break;
 	}
 	case 5: {
-		keterangan = "Mei"
+		bulan = "Mei"
 		break;
 	}
 	case 6: {
-		keterangan = "Juni";
+		bulan = "Juni";
 		break;
 	}
 	case 7: {
-		keterangan = "Juli";
+		bulan = "Juli";
 		break;
 	}
 	case 8: {
-		keterangan = "Agustus";
+		bulan = "Agustus";
 		break;
 	}
 	case 9: {
-		keterangan = "September";
+		bulan = "September";
 		break;
 	}
 	case 10: {
-		keterangan = "Oktober";
+		bulan = "Oktober";
 		break;
 	}
 	case 11: {
-		keterangan = "November";
+		bulan = "November";
 		break;
 	}
 	case 12: {
-		keterangan = "Desember";
+		bulan = "Desember";
+		break;
 	}
 	default: {
-		console.log("Bulang tidak tersedia");
+		bulan = "Bulan tidak tersedia!"
+		break;
 	}
 }
 
-console.log(tanggal + " " + keterangan + " " + tahun);
+console.log(tanggal + " " + bulan + " " + tahun);
+
