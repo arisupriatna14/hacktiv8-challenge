@@ -6,25 +6,18 @@ console.log(shoutOut())
 
 
 //2. Tugas 2
-function calculateMultiply() {
+function calculateMultiply(num1, num2) {
   return num1 * num2
 }
-var num1 = 5
-var num2 = 6
 
-var hasilPerkalian = calculateMultiply(num1, num2)
+var hasilPerkalian = calculateMultiply(5, 6)
 console.log(hasilPerkalian)
 
 
 //3. Tugas 3
-function processSentence() {
-  return 'Nama saya ' + name + ', umur saya ' + age + ' tahun, alamat saya di ' + address + ', dan saya punya hobby yaitu ' + hoby
+function processSentence (name, age, address, hoby) {
+  return 'Nama saya ' + name + ', umur saya ' + age + ' tahun, alamat saya di ' + address + ', dan saya punya hobby yaitu ' + hoby + '.'
 }
 
-var name = 'Agus'
-var age = 30
-var address = 'Jln. Malioboro, Yogjakarta'
-var hoby = 'gaming'
-
-var fullSentence = processSentence(name, age, address, hoby)
+var fullSentence = processSentence('Agus', 30, 'Jln. Malioboro, Yogjakarta', 'gaming')
 console.log(fullSentence)
