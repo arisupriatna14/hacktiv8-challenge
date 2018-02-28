@@ -1,3 +1,4 @@
+//1. Banding Angka
 function bandingkanAngka(angka1, angka2) {
   // you can only write your code here!
   if (angka2 > angka1) {
