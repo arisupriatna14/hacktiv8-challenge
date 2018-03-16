@@ -12,23 +12,7 @@ Algoritma
 */
 
 function arrayMerge (firstData, secondData) {
-  var hasilAkhir = []
-  var resultHasilAkhir = []
-  for(var i = 0; i < secondData.length; i++){
-  	for(var j = 0; j < firstData.length; j++){
-  		if(secondData[i] === firstData[j]){
-  			// hasilAkhir.push(firstData[i])
-        // firstData[i]
-        console.log(firstData[i])
-  		} else {
-  			firstData.push(secondData[j])
-  		}
-  	}
-  	
-  }
-  resultHasilAkhir.push(hasilAkhir)
-  return resultHasilAkhir
-
+  
 }
 
 // Test cases
