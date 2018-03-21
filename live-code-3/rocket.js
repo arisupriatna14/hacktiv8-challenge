@@ -36,7 +36,31 @@ function invokeSpell (input) {
       { q: 2, w: 1, e: 0, spellName: 'Ghost Walk' },
   ];
 
-  // your code here
+  var counterQ = 0
+  var counterW = 0
+  var counterE = 0
+  var temp = ''
+
+  for(var i = 0; i < input.length; i++){
+    if(input[i] === 'q'){
+      counterQ++
+    } else if(input[i] === 'w') {
+      counterW++
+    } else if(input[i] === 'e'){
+      counterE++
+    } else {
+      return 'Combination does not exist'
+    }
+  }
+
+  //console.log(counterE)
+
+  for(var spellIndex = 0; spellIndex < spells.length; spellIndex++){
+    if(counterQ === spells[spellIndex].q && counterW === spells[spellIndex].w && counterE === spells[spellIndex].e){
+      return spells[spellIndex].spellName
+    }
+  }
+
 }
 
 console.log(invokeSpell('qwe')); // Deafening Blast

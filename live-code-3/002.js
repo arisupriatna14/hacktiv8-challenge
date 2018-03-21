@@ -17,30 +17,30 @@ Aturan coding:
     - spread operator(...)
 */
 
-/*
-Algoritma:
-1. saya memiliki dua array dan satu index, dimana array tersebut akan saya lakukan looping dengan inisialisasi variable i dengan nilai awal sama dengan 0 dan sampai nilai akhir.
-2. dimana array 'secondData' dimasukkan ke 'firstData' berdasarkan parameter `index`.
-3. lalu array "firstData" di sort.
-
-
-
-
-*/
 
 function arrayInjector (firstData, index, secondData) {
-  for(var i = 0; i < secondData.length; i++){
-    firstData.push(secondData[i])
+  var hasilAkhir = []
+  for(var i = 0; i < firstData.length; i++){
+    if(i == index){
+      for(var j = 0; j < secondData.length; j++){
+        hasilAkhir.push(secondData[j])
+      }
+    }
+    hasilAkhir.push(firstData[i])
   }
-  firstData.sort()
-  return firstData
+  return hasilAkhir
 }
 
 console.log(arrayInjector([1, 5, 6, 7], 1, [2, 3, 4]));
-// [1, 2, 3, 4, 5, 6, 7]
+// [1, 2, 3, 4, 5, 6, 7]  
 
 console.log(arrayInjector([10, 20, 70], 2, [30, 40, 50, 60]));
 // [10, 20, 30, 40, 50, 60, 70]
 
 console.log(arrayInjector(['Dimitri', 'Alexei', 'Alexander', 'Alisa'], 3, ['Dragunov']));
 // ['Dimitri', 'Alexei', 'Alexander', 'Dragunov', 'Alisa']
+
+/*
+jika firstData bertemu dengan index ke 1 sama dengan parameter index, maka secondData dipush ketika si firstData di index satu
+
+*/

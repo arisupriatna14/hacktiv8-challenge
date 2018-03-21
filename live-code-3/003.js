@@ -35,15 +35,11 @@ function aboveAverageStudents (students) {
   }
   
   var rataNilai = Math.floor(jumlahNilai / jumlahMurid)
-  // console.log(rataNilai)
   
   for(var j = 0; j < students.length; j++){
-    var isiObj = {}
     if(students[j].score >= rataNilai){
-      isiObj.name = students[j].name
-      isiObj.score = students[j].score
+      hasil.push(students[j])
     }
-    hasil.push(isiObj)
   }
   
   return hasil
@@ -71,5 +67,4 @@ console.log(aboveAverageStudents([
 // [ { name: 'Foo', score: 100 }, { name: 'Bar', score: 100 } ]
 
 console.log(aboveAverageStudents([]));
-
 // [ ]
