@@ -1,7 +1,7 @@
 function naikAngkot(arrPenumpang) {
   rute = ['A', 'B', 'C', 'D', 'E', 'F'];
   rute.unshift('')
-  //console.log(rute)
+  console.log(rute)
   var hasilAkhir = []
   var hargaBayar = 0
 

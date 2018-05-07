@@ -1,5 +1,5 @@
 function highestScore (students) {
-  var isiObj = {}
+  let isiObj = {}
   //console.log(students.length)
   for(let a = 0; a < students.length; a++){
     if(isiObj[students[a].class] === undefined){

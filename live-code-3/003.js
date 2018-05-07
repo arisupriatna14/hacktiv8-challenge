@@ -31,10 +31,14 @@ function aboveAverageStudents (students) {
   
   for(var i = 0; i < students.length; i++){
     jumlahNilai += students[i].score
-    jumlahMurid = students[i].name.length
+    //jumlahMurid = students[i].name.length
   }
+  // console.log('Jumlah murid ' + jumlahMurid)
+  // console.log('Jumlah nilai: ' + jumlahNilai)
+  // console.log('jumlah siswa: ' + students.length)
   
-  var rataNilai = Math.floor(jumlahNilai / jumlahMurid)
+  var rataNilai = Math.floor(jumlahNilai / students.length)
+  //console.log('RAta nilai : ' + rataNilai)
   
   for(var j = 0; j < students.length; j++){
     if(students[j].score >= rataNilai){

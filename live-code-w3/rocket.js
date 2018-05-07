@@ -41,17 +41,22 @@ function drawSymbolicColsBox(height) {
         hasil += '@' + ' '
       }
       if(num % 2 === 0 && num % 3 !== 0){
-        hasil += '$' + ' '
+        hasil += num + ' '
       }
       if(num % 3 === 0){
-        hasil += '*' + ' '
+        hasil += num + ' '
       }
 
       num++
+      
+      
     }
     hasil += '\n'
+    //console.log(1 % 3)
+    
   }
   return hasil
+  
 }
 
 console.log(drawSymbolicColsBox(3));

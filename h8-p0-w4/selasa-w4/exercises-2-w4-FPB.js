@@ -1,5 +1,6 @@
 function fpb(angka1, angka2) {
   var hasil = angka1 % angka2
+  //console.log(hasil)
   
   while(hasil !== 0){
     angka1 = angka2

@@ -8,7 +8,7 @@ function hitungHuruf(kata) {
   for(var i = 0; i < splitKata.length; i++){
     hasilAkhir = splitKata[i]
     var counter = 0
-    //console.log(hasilAkhir)
+    console.log(hasilAkhir)
     for(var j = 0; j < splitKata[i].length; j++){
       var tampungKata = hasilAkhir[j]
       //console.log(tampungKata)

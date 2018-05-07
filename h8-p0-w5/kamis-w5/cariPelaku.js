@@ -1,11 +1,11 @@
 function cariPelaku(str) {
-    var str =  str.match(/abc/g)
+    var str =  str.match(/abc+/g)
     var totalPelaku = 0
 
-    for(var a = 0; a < str.length; a++){
-        totalPelaku++
-    }
-    return totalPelaku
+    // for(var a = 0; a < str.length; a++){
+    //     totalPelaku++
+    // }
+    return str.length
 }
 
 // TEST CASES

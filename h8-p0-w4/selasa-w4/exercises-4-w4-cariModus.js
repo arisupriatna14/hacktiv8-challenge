@@ -40,6 +40,7 @@ function cariModus(arr){
 		return -1
 	}
 
+	//untuk mengecek apakah nilai didalam array sama semua atau tidak
 	for(var k = 0; k < arr.length; k++){
 		angkaSamaSemua += arr[k]
 		if(angkaSamaSemua / arr.length === arr[k]){

@@ -26,8 +26,6 @@ function reverseAll(arr){
 	}
 	return resultArr
 
-
-
 }
 console.log(reverseAll(['dimitri', 'sergei', 'alexei']))
 console.log(reverseAll(['kira', 'lawliet', 'near', 'mello']))

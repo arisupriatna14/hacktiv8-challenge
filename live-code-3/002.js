@@ -20,13 +20,13 @@ Aturan coding:
 
 function arrayInjector (firstData, index, secondData) {
   var hasilAkhir = []
-  for(var i = 0; i < firstData.length; i++){
-    if(i == index){
-      for(var j = 0; j < secondData.length; j++){
-        hasilAkhir.push(secondData[j])
+  for(var a = 0; a < firstData.length; a++){
+    if(a == index){
+      for(var b = 0; b < secondData.length; b++){
+        hasilAkhir.push(secondData[b])
       }
     }
-    hasilAkhir.push(firstData[i])
+    hasilAkhir.push(firstData[a])
   }
   return hasilAkhir
 }

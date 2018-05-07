@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+
+    <form id="calform" name="cal">
+        <input name="display" style="width: 675px; height: 100px; text-align: center; background-color: #1f80c9"> <br>
+        <input type="button" value="&#247" onClick="cal.display.value+='/'" style="background-color: #11eeff">  
+        <input type="button" value="+" onClick="cal.display.value+='+'" style="background-color: #F57F17"> 
+        <input type="button" value="x" onClick="cal.display.value+='*'" style="background-color: #FF3D00"> 
+        <input type="button" value="^" onClick='cal.display.value=Math.pow(cal.display.value, 2)'> <br>
+        <input type="button" value="-" onClick="cal.display.value+='-'">
+        <input type="button" value="%" onClick="cal.display.value+='%'">
+        <input type="button" value="x2" >
+         
+        
+        <input type="button" value="C" onClick="cal.display.value=''">
+        <input type="button" value="=" onClick="cal.display.value=eval(cal.display.value)">
+        
+    </form>
+</body>
+</html>

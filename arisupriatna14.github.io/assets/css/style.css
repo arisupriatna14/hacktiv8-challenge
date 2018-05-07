@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: snow;
+    font-family: 'Reem Kufi'
+}
+
+.ari-navbar {
+    float: right;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.ari-navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: dimgrey;
+    padding-right: 15px; 
+}
+
+.ari-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px){
+    .ari-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .ari-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .ari-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .ari-container {
+        max-width: 1140px;
+    }
+}
+
+.ari-profile {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.ari-profile img {
+    border-radius: 100%;
+    width: 35%;
+}
+
+.ari-profile h1, p {
+    color: dimgrey;
+}
+
+.ari-profile h1 {
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+.ari-profile p {
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.social-media {
+    padding: 10px 10px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.social-media i {
+    font-size: 3vw;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+@media only screen and (max-width: 768px){
+    .ari-profile {
+        width: 100%;
+        margin: auto;
+    }
+}

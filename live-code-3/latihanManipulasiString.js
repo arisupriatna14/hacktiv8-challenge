@@ -1,18 +1,17 @@
 function getDomainName(url){
   var hasilUrl = []
   var hasilAkhir = ''
+  var urlSplit = url.split('.')
+  //console.log(urlSplit)
 
-  for(var k = 0; k < url.length; k++){
-    if((url[k] !== 'w') && url[k] !== '.'){
-      hasilUrl.push(url[k])
-    }
-  }
-
-  for(var l = 0; l < hasilUrl.length-3; l++){
-    hasilAkhir += hasilUrl[l]
+  if(urlSplit[0] === 'www' && urlSplit[2] === 'com'){
+    hasilAkhir = urlSplit[1]
+  } else {
+    hasilAkhir = urlSplit[0]
   }
 
   return hasilAkhir
+
 }
 console.log(getDomainName('www.google.com')); //google
 console.log(getDomainName('facebook.com')); //facebook

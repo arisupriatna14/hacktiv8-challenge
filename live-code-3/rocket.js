@@ -53,7 +53,7 @@ function invokeSpell (input) {
     }
   }
 
-  //console.log(counterE)
+  //console.log(counterQ + ' ' + counterW + ' ' + counterE)
 
   for(var spellIndex = 0; spellIndex < spells.length; spellIndex++){
     if(counterQ === spells[spellIndex].q && counterW === spells[spellIndex].w && counterE === spells[spellIndex].e){
