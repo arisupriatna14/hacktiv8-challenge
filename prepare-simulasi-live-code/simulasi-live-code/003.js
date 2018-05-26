@@ -55,6 +55,8 @@ function numbersDivider(num) {
         // console.log(a)
     }
 
+    console.log(kumpulanHasilPembagi)
+
     for(var b = 0; b < kumpulanHasilPembagi.length; b++){
         if(kumpulanHasilPembagi[b] % 2 === 1){
             jumlahNumGanjil += kumpulanHasilPembagi[b]

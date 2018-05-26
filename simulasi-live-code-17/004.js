@@ -24,31 +24,9 @@ output: ['dont', 'know', 'what', 'have', 'lose']
 */
 
 function averageLengthWord(words) {
-  var jumlahHuruf = 0;
-  var splitWord = words.split(' ')
-  var result = []
-
-  for (var a = 0; a < words.length; a++) {
-    if(words[a] !== ' '){
-      jumlahHuruf++
-    }
-  }
-
-  var averageWord = Math.round(jumlahHuruf / splitWord.length)
-
-  for(var a = 0; a < splitWord.length; a++){
-    if(splitWord[a].length === averageWord){
-      result.push(splitWord[a])
-    }
-  }
-
-  return result
-
-
+  // Code here
 }
 
-console.log(averageLengthWord("Do you want to become a great coder ?")); // ['you']
-console.log(
-  averageLengthWord("You dont know what you have until you lose it!")
-); // [ 'dont','know','what','have','lose']
-console.log(averageLengthWord("I am diligent")); // []
+console.log(averageLengthWord('Do you want to become a great coder ?')); // ['you']
+console.log(averageLengthWord('You dont know what you have until you lose it!')); // [ 'dont','know','what','have','lose']
+console.log(averageLengthWord('I am diligent')); // []

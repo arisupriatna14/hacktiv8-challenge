@@ -66,7 +66,6 @@ console.log(convertToObject('name,phoneNumber', 'Dimitri,+666123654'));
 
 console.log(convertToObject('firstName,lastName,nationality', 'Sergei,Dragunov,Russia'));
 // { firstName: 'Sergei', lastName: 'Dragunov', nationality: 'Russia' }
-console.log(convertToObject)
 
 console.log(convertToObject('', ''));
 // { }

@@ -42,37 +42,37 @@ function missingNumbers (numbers) {
     numbers[b+1] = target
   }
   
-  // var resultHasil = []
-  // var max = numbers[numbers.length-1]
-  // var min = numbers[0]
-  // var middle = numbers[2]
+  var resultHasil = []
+  var max = numbers[numbers.length-1]
+  var min = numbers[0]
+  var middle = numbers[2]
 
-  // // for(var i = min+1; i < max; i++){
-  // //   if(i < numbers[1]){
-  // //     resultHasil.push(i)
-  // //   } 
-  // //   else if(i > numbers[1] && i < max){
-  // //     resultHasil.push(i)
-  // //   }
-  // // }
-  // if(numbers.length > 3){
-  //   for(var i = min+1; i < max; i++){
-  //     if(i < numbers[1] || i > middle){
-  //       resultHasil.push(i)
-  //     } else if (i >= numbers[1] && i >= max){
-  //       resultHasil.push(i)
-  //     }
-  //   }
-  // } else {
-  //   for(var j = min+1; j < max; j++){
-  //     if(j < numbers[1]){
-  //       resultHasil.push(j)
-  //     } else if(j > numbers[1] && j < max){
-  //       resultHasil.push(j)
-  //     }
+  // for(var i = min+1; i < max; i++){
+  //   if(i < numbers[1]){
+  //     resultHasil.push(i)
+  //   } 
+  //   else if(i > numbers[1] && i < max){
+  //     resultHasil.push(i)
   //   }
   // }
-  return numbers
+  if(numbers.length > 3){
+    for(var i = min+1; i < max; i++){
+      if(i < numbers[1] || i > middle){
+        resultHasil.push(i)
+      } else if (i >= numbers[1] && i >= max){
+        resultHasil.push(i)
+      }
+    }
+  } else {
+    for(var j = min+1; j < max; j++){
+      if(j < numbers[1]){
+        resultHasil.push(j)
+      } else if(j > numbers[1] && j < max){
+        resultHasil.push(j)
+      }
+    }
+  }
+  return resultHasil
 }
 //1, 5, 6, 7, 10
 console.log(missingNumbers([1, 5, 10, 7, 6])); // [2, 3, 4, 8, 9]

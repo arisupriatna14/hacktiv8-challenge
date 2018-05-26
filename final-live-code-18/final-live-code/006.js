@@ -30,19 +30,6 @@ function recursiveFormatDuration (seconds) {
   if(seconds < 60){
     return seconds + ' detik '
   }
-
-
-
-
-  
-
-
-
-  
-
-
-
-
 }
 
 console.log(recursiveFormatDuration(3660)); // 1 jam 1 menit 0 detik
